@@ -4,17 +4,14 @@ import ProfilePic from "../images/profile-pic.jpg";
 export default function About() {
   return (
     <div className="card">
-      <div className="card-header">
-        <h2>About Me</h2>
-        <h4>________</h4>
-      </div>
+      <h2>About Me</h2>
+
       <div className="card-body">
         <img
           src={ProfilePic}
           alt="William Lowrimore"
           className="img-fluid wlpic"
         />
-
         <p>
           Hi, my name is William Lowrimore. I am currently studying at
           Vanderbilt University's Full Stack Coding Bootcamp. Let me begin by
@@ -38,6 +35,24 @@ export default function About() {
           please review my portfolio. You might find that I am willing and able
           to learn new skills, and adapt to new environments.
         </p>
+      </div>
+      <div className="skills">
+        <h3>Skills and Studies</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS/Bootstrap/Foundation 6</li>
+          <li>JavaScript/ES6/JQuery</li>
+          <li>Mongoose</li>
+          <li>MongoDB</li>
+        </ul>
+
+        <ul>
+          <li>ExpressJS</li>
+          <li>React</li>
+          <li>NodeJS</li>
+          <li>SQL/Mysql</li>
+        </ul>
+        <h4>...and much more!</h4>
       </div>
     </div>
   );

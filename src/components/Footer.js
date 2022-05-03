@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaSlack } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer container-fluid">
       <div className="line-position">
         <h5 className="navbar-text">
           Made with{" "}

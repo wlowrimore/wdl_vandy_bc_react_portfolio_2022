@@ -8,16 +8,18 @@ import About from './components/About';
 export default function App() {
   return (
     <section>
-      <div>
+      <header>
         <Navbar />
-      </div>
-      <div>
+      </header>
+
+      <main>
         <About />
-        <Main />
-      </div>
-      <div className="ftr-pos">
+        {/* <Main /> */}
+      </main>
+      
+      <footer className="ftr-pos">
         <Footer />
-      </div>
+      </footer>
     </section>
   );
 }
