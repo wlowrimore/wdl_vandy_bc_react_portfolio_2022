@@ -5,7 +5,7 @@
 body {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   margin: 0;
   
   min-height: 100vh;
@@ -42,60 +42,57 @@ body {
 
 /* _____________________________MAIN______________________________ */
 
-.element-viewer {
+/* .element-viewer {
   display: flex;
   flex-direction: column;
   /* border: 2px solid #cbe4ee; */
-  margin: 100px 100px;
+  /* margin: 100px 100px;
   padding: 0 16px;
-}
+} */
 
-.element-viewer > h1 {
+/* .element-viewer > h1 {
   color: #cbe4ee;
   font-weight: crisp;
   letter-spacing: .3rem;
-}
+} */ */
 
 /* ____________________________ABOUT_____________________________ */
 
-.card {
-  display: flex;
-  flex-direction: column;
-  padding: 20px 100px;
+.about {
+  display: block;  
 }
 
-.card h2 {
+.about-title {
   display: flex;
-  margin: 0;
-  padding: 12px 35px 0 35px;;
-  color: #cbe4ee;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  font-weight: strong;
+  color: skyblue;
   letter-spacing: .2rem;
 }
 
-.card-body {
+.about-body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
+  padding: 0px 150px;
 }
 
-.card img {
+.about img {
+  display: block;
   max-width: 220px;
   max-height: 325px;
 }
 
-.card-body p {
+.about-body p {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  bottom: 20px;
+  flex-direction: column;
+  width: 60%;
   padding: 20px 20px;
-  margin-left: 40px;
   color: #cbe4ee;
-  letter-spacing: .1rem;
+  letter-spacing: 1.4px;
   line-height: 1.5;
-  background-color: #575c5e;
-  border: 1px solid #cbe4ee;
-  border-radius: 10px;
 }
 
 .skills {
@@ -103,7 +100,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  /* border: 2px solid red; */
   padding: 12px 0;
   margin-left: 0;
   width: 40%;
@@ -125,6 +121,49 @@ body {
   align-items: flex-end;
   padding: 2px 24px;
   color: #cbe4ee;
+}
+
+/* ________________________PROJECT WINDOW_________________________ */
+
+.project-display {
+  padding: 50px 55px;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.project-head {
+
+  
+  /* justify-content: center;
+  align-items: flex-start; */
+  font-weight: strong;
+  color: skyblue;
+  letter-spacing: .2rem;
+}
+
+.project img {
+  padding-left: 50px;
+  cursor: pointer;
+}
+
+.project img:hover {
+
+}
+
+.project-body {
+  padding-left: 50px;
+  font-size: 22px;
+  color: #cbe4ee;
+}
+
+.project p {
+  font-size: 20px;
+  letter-spacing: .3px;
+  line-height: 1.5;
+  width: 310px;
+  padding-bottom: 20px;
+  color: skyblue;
+
 }
 
 /* ____________________________FOOTER_____________________________ */

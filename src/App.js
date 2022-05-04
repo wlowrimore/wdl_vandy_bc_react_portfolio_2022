@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-// import Main from "./components/Main";
+import ProjectWindow from "./components/ProjectWindow";
 import About from './components/About';
 
 export default function App() {
@@ -14,9 +14,9 @@ export default function App() {
 
       <main>
         <About />
-        {/* <Main /> */}
+        <ProjectWindow />
       </main>
-      
+
       <footer className="ftr-pos">
         <Footer />
       </footer>

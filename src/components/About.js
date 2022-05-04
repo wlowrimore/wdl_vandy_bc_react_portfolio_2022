@@ -3,15 +3,11 @@ import ProfilePic from "../images/profile-pic.jpg";
 
 export default function About() {
   return (
-    <div className="card">
-      <h2>About Me</h2>
+    <div className="about">
+      <h2 className="about-title">About Me</h2>
 
-      <div className="card-body">
-        <img
-          src={ProfilePic}
-          alt="William Lowrimore"
-          className="img-fluid wlpic"
-        />
+      <div className="about-body">
+        <img src={ProfilePic} alt="William Lowrimore" />
         <p>
           Hi, my name is William Lowrimore. I am currently studying at
           Vanderbilt University's Full Stack Coding Bootcamp. Let me begin by
