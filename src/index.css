@@ -141,6 +141,12 @@ body {
   gap: 40px;
 }
 
+.project-head {
+  color: skyblue;
+  font-weight: strong;
+  letter-spacing: .2rem;
+}
+
 .project-card {
   flex-basis: 225px;
   box-shadow: 1px 1px 8px rgba(101, 191, 226, 0.25);
@@ -153,7 +159,7 @@ body {
 }
 
 .project-card > img {
-  width: 400px;
+  width: 300px;
   height: auto;
   align-self: center;
   border-radius: 5px;
@@ -163,6 +169,11 @@ body {
 .project-card > h3 {
   font-weight: 700;
   font-size: 18px;
+}
+
+.project-card a {
+  color: #064862;
+  font-size: 34px;
 }
 
 .info-group {
@@ -242,7 +253,7 @@ ________________________________________________________________________________
   justify-content: space-between;
   align-items: center;
   padding: 0 200px;
-  margin-top: auto;
+  margin-top: 40px;
   width: 100%;
   background-color: #cbe4ee;
 }

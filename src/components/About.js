@@ -32,24 +32,6 @@ export default function About() {
           to learn new skills, and adapt to new environments.
         </p>
       </div>
-      <div className="skills">
-        <h3>Skills and Studies</h3>
-        <ul>
-          <li>HTML</li>
-          <li>CSS/Bootstrap/Foundation 6</li>
-          <li>JavaScript/ES6/JQuery</li>
-          <li>Mongoose</li>
-          <li>MongoDB</li>
-        </ul>
-
-        <ul>
-          <li>ExpressJS</li>
-          <li>React</li>
-          <li>NodeJS</li>
-          <li>SQL/Mysql</li>
-        </ul>
-        <h4>...and much more!</h4>
-      </div>
     </div>
   );
 }
