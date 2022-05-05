@@ -1,14 +1,24 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaFacebook } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaSlack } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="container-fluid text-center footer">
-      <div className="impressum row-xs-12 row-sm-4 row-sm-pull-6">
-        <p className="navbar-text">Thank You For Visiting My Portfolio!</p>
+    <footer className="footer container-fluid">
+      <div className="line-position">
+        <h5 className="navbar-text">
+          Made with{" "}
+          <img
+            className="svg"
+            src={require("../images/react.svg").default}
+            href="https://iconscout.com/icons/react"
+            target="_blank"
+            alt="react"
+          />{" "}
+          React by William Lowrimore
+        </h5>
       </div>
 
-      <ul className="row justify-content-center">
+      <ul className="footer-icons">
         <li className="row-xs-6 row-sm-2">
           <h2>
             <a
@@ -34,18 +44,21 @@ export default function Footer() {
         <li className="row-xs-6 row-sm-2">
           <h2>
             <a
-              href="https://facebook.com/will.lowrimore"
+              href="https://vuvirtbofsfpt-pjf3765.slack.com/app_redirect?channel=D02QTGL4KAQ"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <FaFacebook></FaFacebook>
+              <FaSlack></FaSlack>
             </a>
           </h2>
         </li>
       </ul>
 
       <div className="copyright row-xs-12 row-sm-3 row-sm-pull-6">
-        <p className="navbar-text"> &copy; William Lowrimore 2022 </p>
+        <h5 className="navbar-text">
+          {" "}
+          &copy; All Rights Reserved William Lowrimore 2022{" "}
+        </h5>
       </div>
     </footer>
   );
