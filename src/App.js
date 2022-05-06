@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import ProjectWindow from "./components/ProjectWindow";
+import Contact from "./components/Contact";
 import About from "./components/About";
 
 export default function App() {
@@ -15,6 +16,7 @@ export default function App() {
       <main>
         <About />
         <ProjectWindow />
+        <Contact />
       </main>
 
       <footer className="ftr-pos">
