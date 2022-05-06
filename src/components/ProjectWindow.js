@@ -53,8 +53,7 @@ export default function ProjectWindow() {
           repo="https://github.com/wlowrimore/vandy-pjct1-once-upon-a-time"
           description="description"
         />
-      </div>
-      //{" "}
+      </div>{" "}
     </section>
   );
 }
