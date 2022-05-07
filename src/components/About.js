@@ -3,7 +3,7 @@ import ProfilePic from "../images/profile-pic.jpg";
 
 export default function About() {
   return (
-    <div className="about">
+    <div className="about" id="about">
       <h2 className="about-title">About Me</h2>
 
       <div className="about-body">
