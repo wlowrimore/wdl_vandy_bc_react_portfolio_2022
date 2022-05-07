@@ -1,27 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import ProjectWindow from "./components/ProjectWindow";
-import Contact from "./components/Contact";
 import About from "./components/About";
+import Footer from "./components/Footer";
 
-export default function App() {
+const DEFAULT_PAGE = About;
+
+const App = (props) => {
+  const [currentPage, setCurrentPage] = useState(DEFAULT_PAGE);
+  const CurrentPageComponent = currentPage;
   return (
-    <section>
-      <header>
-        <Navbar />
-      </header>
-
-      <main>
-        <About />
-        <ProjectWindow />
-        <Contact />
-      </main>
-
-      <footer className="ftr-pos">
-        <Footer />
-      </footer>
-    </section>
+    <div>
+      <Navbar
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
+      <CurrentPageComponent />
+      <Footer />
+    </div>
   );
-}
+};
+
+export default App;

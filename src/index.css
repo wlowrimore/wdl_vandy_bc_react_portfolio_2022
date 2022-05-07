@@ -49,6 +49,13 @@ body {
   border-radius: 8px;
 }
 
+.navActive {
+  color: skyblue;
+  background-color: #263236;
+  padding-top: 8px;
+  border-radius: 8px;
+}
+
 /* ________________________MEDIA QUERIES__________________________ */
 
 @media (max-width: 576px) {
