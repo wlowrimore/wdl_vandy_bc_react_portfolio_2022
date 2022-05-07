@@ -9,7 +9,7 @@ import Project from "./Project";
 
 export default function ProjectWindow() {
   return (
-    <section className="projects">
+    <section className="projects" id="portfolio">
       <h2 className="project-head">Portfolio</h2>
       <div className="projects">
         <Project
