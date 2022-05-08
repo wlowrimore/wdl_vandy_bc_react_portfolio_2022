@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
 
+const handleFormSubmit = (e) => {
+  e.preventDefault();
+
+  // check if email is the proper format
+  if (!validateEmail(email)) {
+    setErrorMessage("Invalid email type!");
+    return;
+  }
+
+  console.log({ name, email, message });
+  alert(`Thank you for your input, ${name}`);
+
+  // clear values in input fields
+  setName("");
+  setEmail("");
+  setMessage("");
+};
+
 export default function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
-  const [errorMessage, setErrorMessage] = useState("");
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-
-    // check if email is the proper format
-    if (!validateEmail(email)) {
-      setErrorMessage("Invalid email type!");
-      return;
-    }
-
-    console.log({ name, email, message });
-    alert(`Thank you for your input, ${name}`);
-
-    // clear values in input fields
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
+  // const [errorMessage, setErrorMessage] = useState("");
 
   return (
     <section id="contact" className="container contact">
