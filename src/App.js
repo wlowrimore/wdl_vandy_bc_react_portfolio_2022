@@ -3,7 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import AboutPage from "./components/AboutPage";
 import Footer from "./components/Footer";
-import CurrentPageContent from "./CurrentPageContent";
+// import CurrentPageContent from "./CurrentPageContent";
 
 const DEFAULT_PAGE = AboutPage;
 
