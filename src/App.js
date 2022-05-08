@@ -1,21 +1,21 @@
 import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import About from "./components/About";
+import AboutPage from "./components/AboutPage";
 import Footer from "./components/Footer";
+import CurrentPageContent from "./CurrentPageContent";
 
-const DEFAULT_PAGE = About;
+const DEFAULT_PAGE = AboutPage;
 
-const App = (props) => {
+const App = () => {
   const [currentPage, setCurrentPage] = useState(DEFAULT_PAGE);
-  const CurrentPageComponent = currentPage;
+  const CurrentPageContent = currentPage;
   return (
     <div>
-      <Navbar
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-      />
-      <CurrentPageComponent />
+      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
+
+      {CurrentPageContent}
+
       <Footer />
     </div>
   );

@@ -1,8 +1,8 @@
 import React from "react";
-import About from "../components/About";
-import Resume from "../components/Resume";
-import Contact from "../components/Contact";
-import ProjectWindow from "../components/ProjectWindow";
+import AboutPage from "./AboutPage";
+import ResumePage from "./ResumePage";
+import ContactPage from "./ContactPage";
+import ProjectPage from "./ProjectPage";
 
 const Navbar = ({ currentPage, setCurrentPage }) => {
   return (
@@ -11,29 +11,29 @@ const Navbar = ({ currentPage, setCurrentPage }) => {
       <nav className="--nav">
         <a
           href="#about"
-          onClick={() => setCurrentPage(About)}
-          className={currentPage === About}
+          onClick={() => setCurrentPage(AboutPage)}
+          data-selected={currentPage === AboutPage}
         >
           About Me
         </a>
         <a
           href="#portfolio"
-          onClick={() => setCurrentPage(ProjectWindow)}
-          className={currentPage === ProjectWindow}
+          onClick={() => setCurrentPage(ProjectPage)}
+          data-selected={currentPage === ProjectPage}
         >
           Portfolio
         </a>
         <a
           href="#contact"
-          onClick={() => setCurrentPage(Contact)}
-          className={currentPage === Contact}
+          onClick={() => setCurrentPage(ContactPage)}
+          data-selected={currentPage === ContactPage}
         >
           Contact
         </a>
         <a
           href="resume"
-          onClick={() => setCurrentPage(Resume)}
-          className={currentPage === Resume}
+          onClick={() => setCurrentPage(ResumePage)}
+          data-selected={currentPage === ResumePage}
         >
           Resume
         </a>

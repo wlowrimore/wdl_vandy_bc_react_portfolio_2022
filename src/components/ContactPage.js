@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
 
-export default function Contact() {
+export default function ContactPage() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
