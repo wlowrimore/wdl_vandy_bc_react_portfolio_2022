@@ -1,13 +1,7 @@
 import React from "react";
-// import DayPlanner from "../images/day_planner.jpg";
-// import TechBlog from "../images/tech_blog_mvc.jpg";
-// import Horiseon from "../images/horiseon_refractor.jpg";
-// import RunBuddy from "../images/run-buddy.jpg";
-// import BudgetTracker from "../images/budget_tracker_pwa.jpg";
-// import { FaGithub } from "react-icons/fa";
 import Project from "./Project";
 
-export default function ProjectWindow() {
+export default function ProjectPage() {
   return (
     <section className="projects" id="portfolio">
       <h2 className="project-head">Portfolio</h2>
