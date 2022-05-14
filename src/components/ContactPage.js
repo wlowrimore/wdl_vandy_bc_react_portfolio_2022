@@ -1,28 +1,45 @@
 import React, { useState } from "react";
 import { FaArrowCircleRight } from "react-icons/fa";
+import { validateEmail } from "../utils/helpers";
 
-const handleFormSubmit = (e) => {
-  e.preventDefault();
-  // check if email is the proper format */
-  if (!validateEmail(email)) {
-    setErrorMessage("Invalid email type!");
-    return;
-  }
-  console.log({ name, email, message });
-  alert(`Thank you for your input, ${name}`);
-
-  //  clear values in input fields
-  setName("");
-  setEmail("");
-  setMessage("");
-};
-
-const ContactPage = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+function ContactPage() {
+  const [formState, setFormState] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
   const [errorMessage, setErrorMessage] = useState("");
+  const { name, email, message } = formState;
+
+  function handleChange(e) {
+    if (e.target.name === "email") {
+      const isValid = validateEmail(e.target.value);
+      if (!isValid) {
+        setErrorMessage("Invalid Credentials!");
+      } else {
+        if (!e.target.value.length) {
+          setErrorMessage(`${e.target.name} is required.`);
+        } else {
+          setErrorMessage("");
+        }
+      }
+    }
+    if (!errorMessage) {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+    }
+  }
+
+  function handleBlank(e) {
+    if (e.target.name === "Name" || e.target.name === "Message") {
+      if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+      } else {
+        setErrorMessage("");
+      }
+    }
+  }
+
   return (
     <section id="contact" className="container contact">
       <h1>Contact Me</h1>
@@ -33,7 +50,7 @@ const ContactPage = () => {
             className="form-control"
             type="name"
             defaultValue={name}
-            onChange={(e) => setName(e.target.value)}
+            onBlur={handleBlank}
             name="name"
             placeholder="Name"
           />
@@ -46,7 +63,7 @@ const ContactPage = () => {
             type="email"
             defaultValue={email}
             name="email"
-            onChange={(e) => setEmail(e.target.value)}
+            onBlur={handleChange}
             placeholder="Email"
           />
         </div>
@@ -57,21 +74,18 @@ const ContactPage = () => {
             className="form-control"
             name="message"
             defaultValue={message}
-            onChange={(e) => setMessage(e.target.value)}
+            onBlur={handleBlank}
             rows="5"
             placeholder="Message"
           />
         </div>
-        <button
-          className="btn shadow-none"
-          type="submit"
-          onClick={handleFormSubmit}
-        >
+        {errorMessage && <div>Something Went Wrong!</div>}
+        <button className="btn shadow-none" type="submit">
           <FaArrowCircleRight className="icon" />
         </button>
       </form>
     </section>
   );
-};
+}
 
 export default ContactPage;
