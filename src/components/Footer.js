@@ -13,8 +13,8 @@ export default function Footer() {
             href="https://iconscout.com/icons/react"
             target="_blank"
             alt="react"
-          />{" "}
-          React by William Lowrimore
+          />
+          React&trade; by William Lowrimore
         </h5>
       </div>
 

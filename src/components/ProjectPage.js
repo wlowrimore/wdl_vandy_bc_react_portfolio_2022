@@ -42,9 +42,9 @@ export default function ProjectPage() {
         />
 
         <Project
-          image={require("../images/1nceUponATime.jpg")}
-          name="Once Upon A Time"
-          repo="https://github.com/wlowrimore/vandy-pjct1-once-upon-a-time"
+          image={require("../images/weather-dash.jpg")}
+          name="Weather Dashboard"
+          repo="https://github.com/wlowrimore/vandy_bc_weather_dash_chlng_06_2022"
           description="description"
         />
       </div>{" "}

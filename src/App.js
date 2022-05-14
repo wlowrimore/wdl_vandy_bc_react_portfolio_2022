@@ -18,7 +18,7 @@ function App() {
         return <AboutPage />;
       case "portfolio":
         return <ProjectPage />;
-      case "contact":
+      case "contact-form":
         return <ContactPage />;
       case "resume":
         return <ResumePage />;
