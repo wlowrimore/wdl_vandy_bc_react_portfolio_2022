@@ -8,24 +8,18 @@ function Navbar(props) {
       <h2>William Lowrimore</h2>
       <nav className="--nav">
         <ul>
-          <li className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
+          <li className={currentTab === "about" ? "navActive" : "mx-0"}>
             <span onClick={() => setCurrentTab("about")}>About Me</span>
           </li>
-          <li
-            className={currentTab === "portfolio" ? "mx-2 navActive" : "mx-2"}
-          >
+          <li className={currentTab === "portfolio" ? "navActive" : "mx-2"}>
             <span onClick={() => setCurrentTab("portfolio")}>Portfolio</span>
           </li>
-          <li
-            className={
-              currentTab === "contact-form" ? "mx-2 navActive" : "mx-2"
-            }
-          >
+          <li className={currentTab === "contact-form" ? "navActive" : "mx-2"}>
             <span onClick={() => setCurrentTab("contact-form")}>
               Contact Me
             </span>
           </li>
-          <li className={currentTab === "resume" ? "mx-2 navActive" : "mx-2"}>
+          <li className={currentTab === "resume" ? "navActive" : "mx-2"}>
             <span onClick={() => setCurrentTab("resume")}>Resume</span>
           </li>
         </ul>
