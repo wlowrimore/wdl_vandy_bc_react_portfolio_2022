@@ -7,7 +7,7 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   margin: 0;  
-  min-height: 100vh;
+  height: 100%;
   background-color: #263236;
   font-family: 'Inter', sans-serif;
 }
@@ -38,7 +38,7 @@ ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  padding: 2px;
+  padding: 0 12px 0 0;
 }
 
 span {
@@ -53,10 +53,9 @@ span {
 span:hover {
   color: skyblue;
   background-color: #263236;
-  padding-top: -2px;
-  padding-right: -5px;
   border-radius: 8px;
   cursor: pointer;
+  transition: .6s;
 }
 
 nav .navactive {
@@ -67,147 +66,10 @@ nav .navactive {
 nav .navActive {
   display: flex;
   justify-content: center;
-  /* color: red; */
   background-color: #263236;
   padding-top: 2px;
   border-radius: 8px;
 }
-
-/* ________________________MEDIA QUERIES__________________________ */
-
-/* @media (max-width: 576px) {
-  .header h2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: .2rem;
-    color: white;
-  }
-
-  nav li {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 30px;
-    letter-spacing: .3rem;
-    color: white;
-  }
-
-  nav li:hover {
-    color: white;
-    background-color: #064862;
-    padding-top: 18px;
-  }
-
-  .about-body {
-    border: 2px solid #cbe4ee;
-    width: 100%;
-    padding: 8px -150px;
-    margin: 0;
-  }
-
-  .about p {
-    display: flex;
-    flex-direction: row;
-    font-family: sans-serif;
-    font-size: 26px;
-    font-weight: lighter;
-    color: whitesmoke;
-    line-height: 1.5;
-    letter-spacing: .3rem;
-  }
-
-  .about-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
-
-  .about h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: 'Inter';
-    font-size: 38px;
-    font-weight: 900;
-    background-color: #cbe4ee;
-    color: #263236;
-    padding: 12px;
-    letter-spacing: .3rem;
-  }
-
-  .projects h2{
-    display: flex;
-    flex-direction: row;
-    color: #263236;
-    font-size: 38px;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
-
-  .project-head {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: 'Inter';
-    font-size: 38px;
-    font-weight: 900;
-    background-color: #cbe4ee;
-    color: #263236;
-    padding: 12px;
-    letter-spacing: .3rem;
-  }
-  
-
-  .container.contact {
-    background-color: #263236;
-    border-color: #263236;
-    box-shadow: none;
-    width: 800px;
-  }
-
-  .contact h1 {
-    color: white;
-  }
-
-  #contact.form {
-    background-color: #263236;
-  }
-
-  .button.btn {
-    color: #263236;
-    background-color: #263236;  
-  }
-  
-  svg.icon {
-    color: white;
-    background-color: #263236;
-    border: none;
-    margin: 0;
-    margin-bottom: -5px;
-    
-    padding-left: 8px;
-    outline-style: none;
-    
-  }
-
-  .svg.icon:hover {
-    color: #263236;
-    background-color: #263236;
-    margin:0;
-  }
-
-  .icon:active {
-    color: #263236;
-    background-color: #263236;
-    margin: 0;
-  }
-} */
 
 /* ____________________________ABOUT_____________________________ */
 
@@ -218,6 +80,13 @@ nav .navActive {
   padding: 20px;
   color: skyblue;
   letter-spacing: .2rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: auto;
 }
 
 .about-body {
@@ -252,10 +121,12 @@ nav .navActive {
   overflow-y: auto;
 }
 
-.project-head {
+.projects h1 {
   color: skyblue;
   font-size: 26px;
-  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 4px;
+  padding: 0px;
   letter-spacing: .2rem;
 }
 
@@ -298,26 +169,33 @@ nav .navActive {
   font-size: 12px;
   letter-spacing: .3px;
   line-height: 1.5;
-  /* width: 310px; */
   color: #064862;
   margin-block: 3px;
   font-size: 12px;
   color: black;
 }
 
+.project-links a {
+  color: #263236;
+  padding: 8px;
+}
+
+.project-links a:hover {
+  color: gray;
+  transition: .4s;
+}
+
 /* ________________________________CONTACT__________________________________ */
 
 .container {
-  display: flex;
+  display: block;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   margin: auto;
-  /* box-shadow: 1px 1px 8px rgba(101, 191, 226, 0.25); */
 }
 
 .container h1 {
-  font-size: 24px;
-  font-weight: 900;
+  font-size: 26px;
   letter-spacing: .2rem
 }
 
@@ -329,7 +207,7 @@ nav .navActive {
   width: 50%;
   color: skyblue;
   background-color: #263236;
-  /* padding: 20px 20px; */
+  padding: 20px 20px;
   margin-top: 20px;
   border-radius: 5px;
   letter-spacing: .1rem;
@@ -372,15 +250,11 @@ textarea {
 button {
   width: 100%;
   margin-top: 20px;
-  /* background-color: #263236; */
-  /* border: 1px solid red; */
-  /* border-radius: 3px; */
 }
 
 .icon {
   width: 100%;
   font-size: 30px;
-  /* border-radius: 3px; */
   padding: 0;
   color: #263236;
   background-color: white;
@@ -404,102 +278,82 @@ button {
   background-color: #263236;
 }
 
-/* .project-display {
-  padding: 50px 55px;
-  display: inline-flex;
-  flex-wrap: wrap;
-} */
-
-/* .project-head { */
-
-  
-  /* justify-content: center;
-  align-items: flex-start; */
-  /* font-weight: 900;
-  color: skyblue;
-  letter-spacing: .2rem;
-/* } */
-
-/* .project img {
-  padding-left: 50px;
-  cursor: pointer;
-} 
-
-.project img:hover {
-
-}
-
-.project-body {
-  padding-left: 50px;
-  font-size: 22px;
-  color: #cbe4ee;
-}
-
-.project p {
-  font-size: 20px;
-  letter-spacing: .3px;
-  line-height: 1.5;
-  width: 310px;
-  padding-bottom: 20px;
-  color: skyblue;
-
-} */
-
 /* _______________________________RESUME SECTION_______________________________ */
 
 .resume {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
-  font-weight: 900;
+  justify-content: center;
+  width: 100%;
+}
+
+.resume h1 {
+  display: flex;
+  flex-wrap: wrap;
   color: skyblue;
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 14px;
+  padding: 0px;
   letter-spacing: .2rem;
 }
 
-.resume-title {
-  font-size: 26px;
+.resume h2 {
+  margin: 0;
+  padding-top: 20px;
 }
 
 .resume-body {
   display: flex;
   flex-direction: column;
+  height: 100vh;
+  width: 60%;
   color: #000;
   background-color: whitesmoke;
   padding: 20px;
   border: 2px solid #263236;
   border-radius: 8px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   margin: 20px 4px;
+  line-height: 0;
 }
 
-.resume h3 {
-  font-family: arial;
-  font-size: 30px;
-  
+.resume-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.7;
 }
+
+.resume-contact-info > a {
+  text-decoration: none;
+  color: darkblue;
+}
+
+.resume-contact-info >a:hover {
+  color: black;
+  background-color: gray;
+  padding: 0 6px;
+  border: 1px solid gray;
+  border-radius: 14px;
+  letter-spacing: 2px;
+}
+
+
 
 /* ____________________________FOOTER_____________________________ */
 
-.ftr-pos {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  overflow: hidden;
-}
-
 .footer {
+  width: 100%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 0 200px;
   margin-top: 40px;
-  width: 100%;
   background-color: #cbe4ee;
 }
 
@@ -524,6 +378,7 @@ button {
 
 .footer a:hover {
   color: royalblue;
+  transition: .4s;
 }
 
 .svg {
