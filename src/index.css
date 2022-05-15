@@ -216,7 +216,6 @@ nav .navActive {
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
-  font-weight: 900;
   color: skyblue;
   letter-spacing: .2rem;
 }
@@ -237,7 +236,7 @@ nav .navActive {
 .about-body p {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px;
+  padding: 20px 100px;
   color: #cbe4ee;
   letter-spacing: 1.4px;
   line-height: 1.5;
@@ -255,7 +254,8 @@ nav .navActive {
 
 .project-head {
   color: skyblue;
-  font-weight: 900;
+  font-size: 26px;
+  padding: 20px;
   letter-spacing: .2rem;
 }
 
@@ -312,7 +312,7 @@ nav .navActive {
   flex-direction: row;
   justify-content: space-around;
   margin: auto;
-  box-shadow: 1px 1px 8px rgba(101, 191, 226, 0.25);
+  /* box-shadow: 1px 1px 8px rgba(101, 191, 226, 0.25); */
 }
 
 .container h1 {
@@ -328,8 +328,8 @@ nav .navActive {
   align-items: center; 
   width: 50%;
   color: skyblue;
-  background-color: #064862;
-  padding: 20px 20px;
+  background-color: #263236;
+  /* padding: 20px 20px; */
   margin-top: 20px;
   border-radius: 5px;
   letter-spacing: .1rem;
@@ -369,39 +369,39 @@ textarea {
   outline: none;
 }
 
-.btn {
-  padding: 0;
-  color: skyblue;
-  background-color: #064862;
-  border: none; 
+button {
+  width: 100%;
+  margin-top: 20px;
+  /* background-color: #263236; */
+  /* border: 1px solid red; */
+  /* border-radius: 3px; */
 }
 
 .icon {
-  
-  font-size: 40px;
-  margin-top: 10px;
-  margin-left: 7px;
-  background-color: #064862;
-  outline-style: none;
+  width: 100%;
+  font-size: 30px;
+  /* border-radius: 3px; */
+  padding: 0;
+  color: #263236;
+  background-color: white;
 }
 
 .icon:hover {
-  border: none;
-  opacity: 50%;
-  color: #02fcfc;
-  background-color: #064862;
+  width: 100%;
+  color: gray;
+  background-color: white;
   transition: .4s;
   cursor: pointer;
 }
 
 .icon:active {
   color: skyblue;
-  background-color: #064862;
+  background-color: #263236;
 }
 
 .icon:after {
   color: skyblue;
-  background-color: #064862;
+  background-color: #263236;
 }
 
 /* .project-display {
@@ -457,6 +457,10 @@ textarea {
   font-weight: 900;
   color: skyblue;
   letter-spacing: .2rem;
+}
+
+.resume-title {
+  font-size: 26px;
 }
 
 .resume-body {

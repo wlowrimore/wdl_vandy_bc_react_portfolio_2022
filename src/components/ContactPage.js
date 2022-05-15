@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaArrowCircleRight } from "react-icons/fa";
+import { FaPaperPlane } from "react-icons/fa";
 import { validateEmail } from "../utils/helpers";
 
 function ContactPage() {
@@ -78,11 +78,13 @@ function ContactPage() {
             rows="5"
             placeholder="Message"
           />
+          <button className="btn" type="submit">
+            <span className="icon">
+              <FaPaperPlane />
+            </span>
+          </button>
         </div>
         {errorMessage && <div>Something Went Wrong!</div>}
-        <button className="btn shadow-none" type="submit">
-          <FaArrowCircleRight className="icon" />
-        </button>
       </form>
     </section>
   );
