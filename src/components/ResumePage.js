@@ -37,13 +37,64 @@ const ResumePage = () => {
         <section className="education">
           <div className="section-titles">
             <h2>Education</h2>
-            <h2>Certification of Full Stack Web Development</h2>
-            <h2>Vanderbilt University Full Stack Coding Bootcamp, Nashville, TN 2021-2022</h2>
+            <h4>Certification of Full Stack Web Development</h4>
+            <h4>
+              Vanderbilt University Full Stack Coding Bootcamp, Nashville, TN
+              2021-2022
+            </h4>
           </div>
           <ul>
             <li>3.3 GPA</li>
-            <li>Completed a first quarter project building a front-end web app using third-party APIs and local storage</li>
-            <li>Completed a second quarter project building a MVC using server-side JavaScript, RESTful APIs, databases, ORM, environment variables, templating, and authentication</li>
+            <li>
+              Completed a first quarter project building a front-end web app
+              using third-party APIs and local storage
+            </li>
+            <li>
+              Completed a second quarter project building a MVC using
+              server-side JavaScript, RESTful APIs, databases, ORM, environment
+              variables, templating, and authentication
+            </li>
+          </ul>
+        </section>
+
+        <section className="coursework">
+          <div className="section-titles">
+            <h4>Relevant coursework</h4>
+          </div>
+          <ul>
+            <li>MERN</li>
+            <li>REACT</li>
+            <li>Progressive Web Application</li>
+            <li>NoSQL</li>
+            <li>Computer Science for JavaScript</li>
+            <li>Model View-Controller</li>
+            <li>Object-Relational Mapping</li>
+            <li>SQL</li>
+            <li>Express.js</li>
+            <li>Object Oriented Mapping</li>
+            <li>Node.js</li>
+            <li>Server-Side APIs</li>
+            <li>Third-Party APIs</li>
+            <li>Web APIs</li>
+            <li>JavaScript</li>
+            <li>Advanced CSS</li>
+            <li>HTML, CSS, and Git</li>
+          </ul>
+        </section>
+
+        <section className="skills">
+          <div className="section-titles"></div>
+          <h2>Skills</h2>
+          <ul>
+            <li>Excellent communication skills</li>
+            <li>Time management, critical thinking and problem-solving</li>
+            <li>Web programming</li>
+            <li>React</li>
+            <li>SQL</li>
+            <li>Progressive web app design</li>
+            <li>Single page web app design</li>
+            <li>UI design</li>
+            <li>Full stack MERN</li>
           </ul>
         </section>
         <br></br>

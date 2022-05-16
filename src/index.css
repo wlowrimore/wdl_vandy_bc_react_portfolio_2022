@@ -196,7 +196,8 @@ nav .navActive {
 
 .container h1 {
   font-size: 26px;
-  letter-spacing: .2rem
+  letter-spacing: .2rem;
+  margin: 0;
 }
 
 .contact {
@@ -305,7 +306,8 @@ button {
   align-items: flex-end;
   background-color: whitesmoke;
   border-bottom: 1px solid gray;
-  width: 100%;
+  width: 90%;
+  margin: 40px;
   padding: 20px;
 }
 
@@ -319,7 +321,6 @@ button {
 .resume-body {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   width: 60%;
   color: #000;
   background-color: whitesmoke;
@@ -328,7 +329,7 @@ button {
   border-radius: 8px;
   justify-content: flex-start;
   align-items: center;
-  margin: 20px 4px;
+  margin: 20px;
   line-height: 0;
 }
 
@@ -355,15 +356,54 @@ button {
   letter-spacing: 2px;
 }
 
-.objective {
+.objective, .education, .coursework, .skills {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  width: 90%;
+  padding: 0 20px;
 }
 
 .objective p {
   line-height: 1.5;
 }
+
+.section-titles {
+  line-height: 1.5;
+}
+
+.section-titles h4 {
+  font-style: italic;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.education ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  line-height: 1.5;
+  padding: 0 40px;
+}
+
+.coursework ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  line-height: 1.5;
+  padding: 0 40px;
+}
+
+.skills ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  line-height: 1.5;
+  margin-bottom: 65px;
+  padding: 0 40px;
+}
+
+
+
 /* ____________________________FOOTER_____________________________ */
 
 .footer {
