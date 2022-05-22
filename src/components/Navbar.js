@@ -8,7 +8,7 @@ function Navbar(props) {
       <h2>William Lowrimore</h2>
       <nav className="--nav">
         <ul>
-          <li className={currentTab === "about" ? "navActive" : "mx-2s"}>
+          <li className={currentTab === "about" ? "navActive" : "mx-2"}>
             <span onClick={() => setCurrentTab("about")}>About Me</span>
           </li>
           <li className={currentTab === "portfolio" ? "navActive" : "mx-2"}>

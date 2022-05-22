@@ -3,8 +3,8 @@ import Project from "./Project";
 
 export default function ProjectPage() {
   return (
-    <section className="projects" id="portfolio">
-      <h1 className="project-head">Portfolio</h1>
+    <section id="portfolio">
+      <h1>Portfolio</h1>
       <div className="projects">
         <Project
           image={require("../images/budget_tracker_pwa.jpg")}
