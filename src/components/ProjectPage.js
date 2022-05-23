@@ -7,6 +7,20 @@ export default function ProjectPage() {
       <h1>Portfolio</h1>
       <div className="projects">
         <Project
+          image={require("../images/bounty_book.jpg")}
+          name="Bounty Book MERN"
+          repo="https://github.com/wlowrimore/wdl_vandy_bc_react_portfolio_2022"
+          live=""
+          description="Bounty Book was created as a team project for Vanderbilt University's Full
+          Stack Coding Bootcamp. We, as a team, developed a fully functional MERN stack site that
+          uses JWT authentication, web APIs, and front-end and back-end servers.  With this app, 
+          the user can create an account and begin searching for available bounty hunters, as well 
+          as, open bounties located in each of the 50 U.S. states.  My role in this project was 
+          front-end development of the UI design and functionality. I used React.js, Node.js, 
+          Express.js, JSX, JavaScript, HTML, Bootstrap, CSS, React Icons, and React Map, This is a
+          'Mobile First Application'."
+        />
+        <Project
           image={require("../images/budget_tracker_pwa.jpg")}
           name="Budget Tracker PWA"
           repo="https://github.com/wlowrimore/Vandy-bc-PWA-Budget-Tracker-Chlng-19-2022"

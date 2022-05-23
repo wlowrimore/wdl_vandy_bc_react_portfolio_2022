@@ -1,11 +1,21 @@
 import React from "react";
+import { FaFilePdf } from "react-icons/fa";
 
 const ResumePage = () => {
   return (
     <section id="resume">
       <h1>Resume</h1>
-
       <div className="resume-body">
+        <div className="dl">
+          <a
+            href={require("../document/resume.pdf")}
+            target="_blank"
+            rel="noreferrer noopen"
+          >
+            <FaFilePdf />
+            <>download pdf version</>
+          </a>
+        </div>
         <header className="container-fluid resume-header">
           <h2>William Lowrimore</h2>
           <ul className="resume-contact-info">
