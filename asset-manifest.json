@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/wdl_vandy_bc_react_portfolio_2022/static/css/main.7cb2121e.css",
+    "main.js": "/wdl_vandy_bc_react_portfolio_2022/static/js/main.6fe69481.js",
+    "static/js/787.ca59da7f.chunk.js": "/wdl_vandy_bc_react_portfolio_2022/static/js/787.ca59da7f.chunk.js",
+    "static/media/horiseon_refractor.jpg": "/wdl_vandy_bc_react_portfolio_2022/static/media/horiseon_refractor.20df96ae3e419fbbe56c.jpg",
+    "static/media/resume.pdf": "/wdl_vandy_bc_react_portfolio_2022/static/media/resume.386d1c266d33cdc13a39.pdf",
+    "static/media/pizza_hunt.jpg": "/wdl_vandy_bc_react_portfolio_2022/static/media/pizza_hunt.d5aa908992a0335c6053.jpg",
+    "static/media/profile-pic.jpg": "/wdl_vandy_bc_react_portfolio_2022/static/media/profile-pic.d3259fa3ec89da4bbde5.jpg",
+    "static/media/budget_tracker_pwa.jpg": "/wdl_vandy_bc_react_portfolio_2022/static/media/budget_tracker_pwa.51f91f02dbeeda17826f.jpg",
+    "static/media/day_planner.jpg": "/wdl_vandy_bc_react_portfolio_2022/static/media/day_planner.59829630fba61a6c3786.jpg",
+    "static/media/bounty_book.jpg": "/wdl_vandy_bc_react_portfolio_2022/static/media/bounty_book.ba5a73ffe772612b6ee3.jpg",
+    "static/media/tech_blog_mvc.jpg": "/wdl_vandy_bc_react_portfolio_2022/static/media/tech_blog_mvc.272851c7e1ff051162bf.jpg",
+    "static/media/weather-dash.jpg": "/wdl_vandy_bc_react_portfolio_2022/static/media/weather-dash.6d3fbeb576dd940766d8.jpg",
+    "static/media/react.svg": "/wdl_vandy_bc_react_portfolio_2022/static/media/react.317c8cdecc5308dba63b0c99be08d96e.svg",
+    "index.html": "/wdl_vandy_bc_react_portfolio_2022/index.html",
+    "main.7cb2121e.css.map": "/wdl_vandy_bc_react_portfolio_2022/static/css/main.7cb2121e.css.map",
+    "main.6fe69481.js.map": "/wdl_vandy_bc_react_portfolio_2022/static/js/main.6fe69481.js.map",
+    "787.ca59da7f.chunk.js.map": "/wdl_vandy_bc_react_portfolio_2022/static/js/787.ca59da7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7cb2121e.css",
+    "static/js/main.6fe69481.js"
+  ]
+}
