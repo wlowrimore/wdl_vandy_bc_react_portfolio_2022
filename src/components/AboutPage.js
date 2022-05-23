@@ -4,7 +4,7 @@ import ProfilePic from "../images/profile-pic.jpg";
 export default function AboutPage() {
   return (
     <div className="about" id="about">
-      <h2 className="about-title">About Me</h2>
+      <h1>About Me</h1>
 
       <div className="about-body">
         <img src={ProfilePic} alt="William Lowrimore" />

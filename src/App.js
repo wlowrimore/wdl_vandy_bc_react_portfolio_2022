@@ -1,24 +1,39 @@
 import React, { useState } from "react";
 import "./App.css";
+
 import Navbar from "./components/Navbar";
-import AboutPage from "./components/AboutPage";
 import Footer from "./components/Footer";
-import CurrentPageContent from "./CurrentPageContent";
 
-const DEFAULT_PAGE = AboutPage;
+import AboutPage from "./components/AboutPage";
+import ProjectPage from "./components/ProjectPage";
+import ContactPage from "./components/ContactPage";
+import ResumePage from "./components/ResumePage";
 
-const App = () => {
-  const [currentPage, setCurrentPage] = useState(DEFAULT_PAGE);
-  const CurrentPageContent = currentPage;
+function App() {
+  const [currentTab, setCurrentTab] = useState("about");
+
+  const renderTab = () => {
+    switch (currentTab) {
+      case "about":
+        return <AboutPage />;
+      case "portfolio":
+        return <ProjectPage />;
+      case "contact-form":
+        return <ContactPage />;
+      case "resume":
+        return <ResumePage />;
+      default:
+        return null;
+    }
+  };
+
   return (
     <div>
-      <Navbar currentPage={currentPage} setCurrentPage={setCurrentPage} />
-
-      {CurrentPageContent}
-
+      <Navbar currentTab={currentTab} setCurrentTab={setCurrentTab} />
+      <main>{renderTab()}</main>
       <Footer />
     </div>
   );
-};
+}
 
 export default App;

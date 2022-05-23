@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaSlack } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="footer container-fluid">
+    <footer className="footer">
       <div className="line-position">
         <h5 className="navbar-text">
           Made with{" "}
@@ -13,8 +13,8 @@ export default function Footer() {
             href="https://iconscout.com/icons/react"
             target="_blank"
             alt="react"
-          />{" "}
-          React by William Lowrimore
+          />
+          React&trade; by William Lowrimore
         </h5>
       </div>
 

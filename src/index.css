@@ -7,213 +7,98 @@ body {
   flex-wrap: wrap;
   flex-direction: column;
   margin: 0;  
-  min-height: 100vh;
+  height: 100%;
   background-color: #263236;
-  font-family: Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
+
+/* _________________________________________HEADER__________________________________________ */
 
 .header {
   display: flex;
   flex-direction: column;
+  height: 195px;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: -40px;
   align-items: center;
-  justify-content: space-between;
   background-color: #064862;
-
 }
 
 .header h2 {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 38px;
-  font-weight: 900;
-  letter-spacing: .4rem;
+  font-size: 50px;
+  font-weight: 400;
+  letter-spacing: .5rem;
   color: skyblue;
 }
 
-.--nav > a {
-  
-  color: #cbe4ee;
+ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0 12px 0 0;
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
   text-decoration: none;
-  letter-spacing: .2rem;
-  margin: 0 10px;
-  padding: 18px
+  letter-spacing: 5px;
+  padding: 10px;
 }
-.--nav > a:hover {
+span:hover {
   color: skyblue;
   background-color: #263236;
-  padding-top: 8px;
   border-radius: 8px;
+  cursor: pointer;
+  transition: .6s;
 }
 
-.navActive {
-  color: skyblue;
+nav .navactive {
+  display: flex;
+  flex-direction: row;
+}
+
+nav .navActive {
+  display: flex;
+  justify-content: center;
   background-color: #263236;
-  padding-top: 8px;
+  padding-top: 2px;
   border-radius: 8px;
-}
-
-/* ________________________MEDIA QUERIES__________________________ */
-
-@media (max-width: 576px) {
-  .header h2 {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: .2rem;
-    color: white;
-  }
-
-  .--nav a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 30px;
-    letter-spacing: .3rem;
-    color: white;
-  }
-
-  .--nav a:hover {
-    color: white;
-    background-color: #064862;
-    padding-top: 18px;
-  }
-
-  .about-body {
-    /* border: 2px solid #cbe4ee; */
-    width: 100%;
-    padding: 8px -150px;
-    margin: 0;
-  }
-
-  .about p {
-    display: flex;
-    flex-direction: row;
-    font-family: sans-serif;
-    font-size: 26px;
-    font-weight: lighter;
-    color: whitesmoke;
-    line-height: 1.5;
-    letter-spacing: .3rem;
-  }
-
-  .about-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
-
-  .about h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: 'Inter';
-    font-size: 38px;
-    font-weight: 900;
-    background-color: #cbe4ee;
-    color: #263236;
-    padding: 12px;
-    letter-spacing: .3rem;
-  }
-
-  .projects h2{
-    display: flex;
-    flex-direction: row;
-    color: #263236;
-    font-size: 38px;
-    justify-content: center;
-    width: 100%;
-    margin: 0;
-  }
-
-  .project-head {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-family: 'Inter';
-    font-size: 38px;
-    font-weight: 900;
-    background-color: #cbe4ee;
-    color: #263236;
-    padding: 12px;
-    letter-spacing: .3rem;
-  }
-  
-
-  .container.contact {
-    background-color: #263236;
-    border-color: #263236;
-    box-shadow: none;
-    width: 800px;
-  }
-
-  .contact h1 {
-    color: white;
-  }
-
-  #contact.form {
-    background-color: #263236;
-  }
-
-  .button.btn {
-    color: #263236;
-    background-color: #263236;  
-  }
-  
-  svg.icon {
-    color: white;
-    background-color: #263236;
-    border: none;
-    margin: 0;
-    margin-bottom: -5px;
-    
-    padding-left: 8px;
-    outline-style: none;
-    
-  }
-
-  .svg.icon:hover {
-    color: #263236;
-    background-color: #263236;
-    margin:0;
-  }
-
-  .icon:active {
-    color: #263236;
-    background-color: #263236;
-    margin: 0;
-  }
 }
 
 /* ____________________________ABOUT_____________________________ */
 
-.about {
-  display: flex;  
-}
-
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
-  font-weight: 900;
+#about h1 {
+  text-align: center;
   color: skyblue;
-  letter-spacing: .2rem;
+  font-size: 26px;
+  letter-spacing: 3px;
+  padding: 16px 0;
 }
 
 .about-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 4px;
+  max-height: 500px;
+  margin: 15px 4px;
+  overflow-y: scroll;
 }
+
+.about-body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.about-body::-webkit-scrollbar {
+  display: none;
+} 
 
 .about img {
   display: block;
@@ -224,25 +109,46 @@ body {
 .about-body p {
   display: flex;
   flex-direction: column;
-  padding: 20px 20px;
+  padding: 20px 15em;
   color: #cbe4ee;
   letter-spacing: 1.4px;
   line-height: 1.5;
-}
+} 
 
 /* ________________________PROJECT WINDOW_________________________ */
+
+#portfolio h1 {
+  text-align: center;
+  color: skyblue;
+  font-size: 26px;
+  letter-spacing: 3px;
+  padding: 16px 0;
+}
 
 .projects {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
-  overflow-y: auto;
+  max-height: 800px;
+  overflow-y: scroll;
 }
 
-.project-head {
+.projects {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.projects::-webkit-scrollbar {
+  display: none;
+} 
+
+.projects h1 {
   color: skyblue;
-  font-weight: 900;
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 4px;
+  padding: 0px;
   letter-spacing: .2rem;
 }
 
@@ -285,37 +191,48 @@ body {
   font-size: 12px;
   letter-spacing: .3px;
   line-height: 1.5;
-  /* width: 310px; */
   color: #064862;
   margin-block: 3px;
   font-size: 12px;
   color: black;
 }
 
+.project-links a {
+  color: #263236;
+  padding: 8px;
+}
+
+.project-links a:hover {
+  color: gray;
+  transition: .4s;
+}
+
 /* ________________________________CONTACT__________________________________ */
 
 .container {
-  display: flex;
+  display: block;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
+  height: auto;
   margin: auto;
-  box-shadow: 1px 1px 8px rgba(101, 191, 226, 0.25);
 }
 
 .container h1 {
-  font-size: 24px;
-  font-weight: 900;
-  letter-spacing: .2rem
+  font-size: 26px;
+  letter-spacing: .2rem;
+  padding-top: 0px;
+  margin: 0;
 }
 
-.contact {
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  height: 600px;
   width: 50%;
   color: skyblue;
-  background-color: #064862;
+  background-color: #263236;
   padding: 20px 20px;
   margin-top: 20px;
   border-radius: 5px;
@@ -327,6 +244,21 @@ body {
   width: 60%;
 }
 
+input {
+  height: 30px;
+  font-size: 18px;
+  padding: 6px;
+  color: #000;
+}
+
+textarea {
+  height: 200px;
+  font-family: sans-serif;
+  font-size: 18px;
+  padding: 6px;
+  color: #000;
+}
+
 .form-group {
   color: #cbe4ee;
   display: flex;
@@ -336,104 +268,213 @@ body {
 }
 
 .form-control:focus {
+  font-size: 18px;
   background-color: #e3f9f4;
   outline: none;
 }
 
-.btn {
-  padding: 0;
-  color: skyblue;
-  background-color: #064862;
-  border: none; 
+button {
+  width: 100%;
+  margin-top: 20px;
 }
 
 .icon {
-  
-  font-size: 40px;
-  margin-top: 10px;
-  margin-left: 7px;
-  background-color: #064862;
-  outline-style: none;
+  width: 100%;
+  font-size: 30px;
+  padding: 0;
+  color: #263236;
+  background-color: white;
 }
 
 .icon:hover {
-  border: none;
-  opacity: 50%;
-  color: #02fcfc;
-  background-color: #064862;
-  transition: .6s;
+  width: 100%;
+  color: gray;
+  background-color: white;
+  transition: .4s;
   cursor: pointer;
 }
 
 .icon:active {
   color: skyblue;
-  background-color: #064862;
+  background-color: #263236;
 }
 
 .icon:after {
   color: skyblue;
-  background-color: #064862;
+  background-color: #263236;
 }
 
-/* .project-display {
-  padding: 50px 55px;
-  display: inline-flex;
-  flex-wrap: wrap;
-} */
+/* _______________________________RESUME SECTION_______________________________ */
 
-/* .project-head { */
+#resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
-  
-  /* justify-content: center;
-  align-items: flex-start; */
-  /* font-weight: 900;
+#resume h1 {
   color: skyblue;
+  font-size: 26px;
+  margin-top: 40px;
+  margin-bottom: 4px;
+  padding: 0px;
   letter-spacing: .2rem;
-/* } */
+}
 
-/* .project img {
-  padding-left: 50px;
-  cursor: pointer;
+.dl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+  padding: 8px 0;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+}
+
+.dl a {
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: black;
+  padding: 2px 2px;
+  font-weight: 400;  
+}
+
+.dl a:hover {
+  background: gray;
+  color: whitesmoke;
+  border-color: gray;
+  border-radius: 4px;
+}
+
+.resume-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: whitesmoke;
+  border-bottom: 1px solid gray;
+  width: 90%;
+  margin: 40px;
+  padding: 20px;
+}
+
+.resume h2 {
+  display: flex;
+  font-size: 18px;
+  align-items: flex-start;
+  margin-right: 6px;
+}
+
+.resume-body {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  color: #000;
+  background-color: whitesmoke;
+  padding: 6px;
+  border: 2px solid #263236;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px;
+  line-height: 0;
+  max-height: 700px;
+  overflow-y: scroll;
+}
+
+.resume-body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.resume-body::-webkit-scrollbar {
+  display: none;
 } 
 
-.project img:hover {
-
+.resume-contact-info {
+  display: flex;
+  font-size: 14px;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 0;
+  line-height: 1.7;
 }
 
-.project-body {
-  padding-left: 50px;
-  font-size: 22px;
-  color: #cbe4ee;
+.resume-contact-info > a {
+  text-decoration: none;
+  color: darkblue;
 }
 
-.project p {
-  font-size: 20px;
-  letter-spacing: .3px;
+.resume-contact-info >a:hover {
+  color: black;
+  background-color: gray;
+  padding: 0 6px;
+  border: 1px solid gray;
+  border-radius: 14px;
+  letter-spacing: 2px;
+}
+
+.objective, .education, .coursework, .skills {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 0 20px;
+}
+
+.objective p {
   line-height: 1.5;
-  width: 310px;
-  padding-bottom: 20px;
-  color: skyblue;
+}
 
-} */
+.section-titles {
+  line-height: 1.5;
+}
+
+.section-titles h4 {
+  font-style: italic;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+
+.education ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  line-height: 1.5;
+  padding: 0 40px;
+}
+
+.coursework ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  line-height: 1.5;
+  padding: 0 40px;
+}
+
+.skills ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: disc;
+  line-height: 1.5;
+  margin-bottom: 65px;
+  padding: 0 40px;
+}
 
 /* ____________________________FOOTER_____________________________ */
 
-.ftr-pos {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  width: 100%;
-  overflow: hidden;
-}
-
 .footer {
+  width: 100%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 0 200px;
   margin-top: 40px;
-  width: 100%;
   background-color: #cbe4ee;
 }
 
@@ -458,6 +499,7 @@ body {
 
 .footer a:hover {
   color: royalblue;
+  transition: .4s;
 }
 
 .svg {
@@ -475,4 +517,143 @@ body {
   position: relative;
   line-height: 1.5;
   bottom: 12px;
+}
+
+/* ________________________________________MEDIA QUERIES_____________________________________ */
+
+@media only screen and (max-width: 1028px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-bottom: -40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #070b0d;
+  }
+
+  .header h2 {
+    text-align: center;
+    font-size: 34px;
+    color: whitesmoke;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    line-height: 2;
+    font-size: 20px;
+  }
+  
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 5px;
+  }
+  span:hover {
+    color: whitesmoke; 
+  }
+
+  #about h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 32px;
+    letter-spacing: 3px;
+    padding: 16px 0;
+  }
+  
+  .about-body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .about-body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .about-body p {
+    padding: 0 24px;
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+
+  #portfolio h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 32px;
+    letter-spacing: 3px;
+    padding: 16px 0;
+  }
+
+  .projects {
+    padding-bottom: 20px;
+  }
+
+  .container h1 {
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    margin-top: -35px;
+  }
+  
+  #contact {
+    width: 100%;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+
+  #resume {
+    padding: 0 12px;
+  }
+
+  #resume h1 {
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 32px;
+  }
+
+  .resume-header {
+    align-items: center;
+    margin: 0;
+  }
+
+  .resume-body {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .resume-contact-info {
+    align-items: center;
+  }
+
+  .footer {
+    width: 100%;
+    max-height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    margin-top: 0;
+    background-color: #cbe4ee;
+  }
+
+  .footer-icons {
+    padding: 0;
+    max-height: 5px;
+  }
 }
