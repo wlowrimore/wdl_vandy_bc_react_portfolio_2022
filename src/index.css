@@ -73,28 +73,31 @@ nav .navActive {
 
 /* ____________________________ABOUT_____________________________ */
 
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 20px;
+#about h1 {
+  text-align: center;
   color: skyblue;
-  letter-spacing: .2rem;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: auto;
+  font-size: 26px;
+  letter-spacing: 3px;
+  padding: 16px 0;
 }
 
 .about-body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 20px 4px;
+  max-height: 500px;
+  margin: 15px 4px;
+  overflow-y: scroll;
 }
+
+.about-body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.about-body::-webkit-scrollbar {
+  display: none;
+} 
 
 .about img {
   display: block;
@@ -105,30 +108,21 @@ nav .navActive {
 .about-body p {
   display: flex;
   flex-direction: column;
-  padding: 20px 100px;
+  padding: 20px 15em;
   color: #cbe4ee;
   letter-spacing: 1.4px;
   line-height: 1.5;
-}
+} 
 
-/* _____________ */
-/* .content-window {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 40px;
-  overflow-y: scroll;
-}
-
-.content-window {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.content-window::-webkit-scrollbar {
-  display: none;
-} */
 /* ________________________PROJECT WINDOW_________________________ */
+
+#portfolio h1 {
+  text-align: center;
+  color: skyblue;
+  font-size: 26px;
+  letter-spacing: 3px;
+  padding: 16px 0;
+}
 
 .projects {
   display: flex;
@@ -224,6 +218,7 @@ nav .navActive {
 .container h1 {
   font-size: 26px;
   letter-spacing: .2rem;
+  padding-top: 0px;
   margin: 0;
 }
 
@@ -308,7 +303,7 @@ button {
 
 /* _______________________________RESUME SECTION_______________________________ */
 
-.resume {
+#resume {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -316,13 +311,11 @@ button {
   width: 100%;
 }
 
-.resume h1 {
-  display: flex;
-  flex-wrap: wrap;
+#resume h1 {
   color: skyblue;
   font-size: 26px;
   margin-top: 40px;
-  margin-bottom: 14px;
+  margin-bottom: 4px;
   padding: 0px;
   letter-spacing: .2rem;
 }
@@ -358,7 +351,18 @@ button {
   align-items: center;
   margin: 20px;
   line-height: 0;
+  max-height: 700px;
+  overflow-y: scroll;
 }
+
+.resume-body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.resume-body::-webkit-scrollbar {
+  display: none;
+} 
 
 .resume-contact-info {
   display: flex;

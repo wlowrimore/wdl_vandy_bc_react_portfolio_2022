@@ -2,8 +2,8 @@ import React from "react";
 
 const ResumePage = () => {
   return (
-    <div className="resume" id="resume">
-      <h1 className="resume-title">Resume</h1>
+    <section id="resume">
+      <h1>Resume</h1>
 
       <div className="resume-body">
         <header className="container-fluid resume-header">
@@ -101,7 +101,7 @@ const ResumePage = () => {
         <hr />
         <br></br>
       </div>
-    </div>
+    </section>
   );
 };
 export default ResumePage;
