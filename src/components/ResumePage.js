@@ -27,8 +27,8 @@ const ResumePage = () => {
             I am a current student of Vanderbilt University's Full Stack Coding
             Bootcamp. I will be a certified full stack developer with a focus on
             MERN stack when I graduate in May 2022. As I am becoming well-
-            versed in languages from fron-end to back-end development, I do find
-            front-end design and functionality to be where my intrest lies
+            versed in languages from front-end to back-end development, I do
+            find front-end design and functionality to be where my interest lies
             heavily. I am currently seeking employment where my front-end
             knowledge and skills will be utilized.
           </p>
@@ -44,7 +44,7 @@ const ResumePage = () => {
             </h4>
           </div>
           <ul>
-            <li>3.3 GPA</li>
+            <li>3.4 GPA</li>
             <li>
               Completed a first quarter project building a front-end web app
               using third-party APIs and local storage
@@ -67,16 +67,15 @@ const ResumePage = () => {
             <li>Progressive Web Application</li>
             <li>NoSQL</li>
             <li>Computer Science for JavaScript</li>
-            <li>Model View-Controller</li>
-            <li>Object-Relational Mapping</li>
+            <li>Model View Controller</li>
+            <li>Object Relational Mapping</li>
             <li>SQL</li>
             <li>Express.js</li>
             <li>Object Oriented Mapping</li>
             <li>Node.js</li>
             <li>Server-Side APIs</li>
             <li>Third-Party APIs</li>
-            <li>Web APIs</li>
-            <li>JavaScript</li>
+            <li>JavaScript / jQuery</li>
             <li>Advanced CSS</li>
             <li>HTML, CSS, and Git</li>
           </ul>
@@ -88,7 +87,6 @@ const ResumePage = () => {
           <ul>
             <li>Excellent communication skills</li>
             <li>Time management, critical thinking and problem-solving</li>
-            <li>Web programming</li>
             <li>React</li>
             <li>SQL</li>
             <li>Progressive web app design</li>
