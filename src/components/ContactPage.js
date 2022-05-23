@@ -61,7 +61,7 @@ export default function ContactPage() {
             className="form-control"
             type="text"
             defaultValue={name}
-            onBlur={handleChange}
+            onBlur={handleBlank}
             name="name"
             placeholder="Name"
           />
@@ -74,7 +74,7 @@ export default function ContactPage() {
             type="email"
             defaultValue={email}
             name="email"
-            onBlur={handleBlank}
+            onBlur={handleChange}
             placeholder="Email"
           />
         </div>
@@ -85,7 +85,7 @@ export default function ContactPage() {
             className="form-control"
             name="message"
             defaultValue={message}
-            onBlur={handleChange}
+            onBlur={handleBlank}
             rows="5"
             placeholder="Message"
           />
@@ -95,7 +95,7 @@ export default function ContactPage() {
             </span>
           </button>
         </div>
-        {errorMessage && <div>Something Went Wrong!</div>}
+        {errorMessage && <div className="wrong">Something Went Wrong!</div>}
       </form>
     </section>
   );

@@ -24,6 +24,8 @@ When visiting the live site, there is no need for installation. Otherwise, `npm 
   <img src="src\assets\images\ss-contact.jpg" alt="screenshot" />
   <img src="src\assets\images\ss-portfolio.jpg" alt="screenshot" />
   <img src="src\assets\images\ss-resume.jpg" alt="screenshot" />
+  <br>
+  
 
 ### License:
 
