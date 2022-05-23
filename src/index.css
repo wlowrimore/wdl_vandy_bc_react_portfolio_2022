@@ -304,6 +304,14 @@ button {
   background-color: #263236;
 }
 
+.wrong {
+  color: orange;
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+  letter-spacing: 3px;
+}
+
 /* _______________________________RESUME SECTION_______________________________ */
 
 #resume {
