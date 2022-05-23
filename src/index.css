@@ -522,8 +522,6 @@ button {
 /* ________________________________________MEDIA QUERIES_____________________________________ */
 
 @media only screen and (max-width: 1028px) {
-  
-
   .header {
     display: flex;
     flex-direction: column;
