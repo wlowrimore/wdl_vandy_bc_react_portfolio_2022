@@ -20,10 +20,10 @@ When visiting the live site, there is no need for installation. Otherwise, `npm 
 
 ### Usage:
 
-  <image src="../images/ss-about.jpg" alt="screenshot" />
-  <image src="../images/ss-portfolio.jpg" alt="screenshot" />
-  <image src="../images/ss-contact.jpg" alt="screenshot" />
-  <image src="../images/ss-resume.jpg" alt="screenshot" />
+  <img src="src\assets\images\ss-about.jpg" alt="screenshot" />
+  <img src="src\assets\images\ss-contact.jpg" alt="screenshot" />
+  <img src="src\assets\images\ss-portfolio.jpg" alt="screenshot" />
+  <img src="src\assets\images\ss-resume.jpg" alt="screenshot" />
 
 ### License:
 
