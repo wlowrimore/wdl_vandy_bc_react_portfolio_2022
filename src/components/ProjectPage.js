@@ -10,6 +10,8 @@ export default function ProjectPage() {
           image={require("../images/bounty_book.jpg")}
           name="Bounty Book MERN"
           repo="https://github.com/wlowrimore/wdl_vandy_bc_react_portfolio_2022"
+          target="_blank"
+          rel="noreferrer noopener"
           live=""
           description="Bounty Book was created as a team project for Vanderbilt University's Full
           Stack Coding Bootcamp. We, as a team, developed a fully functional MERN stack site that
@@ -24,6 +26,8 @@ export default function ProjectPage() {
           image={require("../images/budget_tracker_pwa.jpg")}
           name="Budget Tracker PWA"
           repo="https://github.com/wlowrimore/Vandy-bc-PWA-Budget-Tracker-Chlng-19-2022"
+          target="_blank"
+          rel="noreferrer noopener"
           live="https://tranquil-shore-61237.herokuapp.com/"
           description="This is a Progressive Web Application (PWA) that tracks a user's budget.
           It has offline use capabilities that will save/cache the user's budget input information,
@@ -35,6 +39,8 @@ export default function ProjectPage() {
           image={require("../images/day_planner.jpg")}
           name="Day Planner App"
           repo="https://github.com/wlowrimore/vandy-bc-weeklyp-2022"
+          target="_blank"
+          rel="noreferrer noopener"
           live="https://wlowrimore.github.io/vandy-bc-weeklyp-2022/"
           description="This App was built using HTML, CSS and JavaScript. The use of third-party
           APIs (such as) moment.js, font awesome, bootsrap, etc. not only resulted in a much more 
@@ -52,6 +58,8 @@ export default function ProjectPage() {
           image={require("../images/tech_blog_mvc.jpg")}
           name="Tech Blog MVC"
           repo="https://github.com/wlowrimore/Vandy-bc-2022-MVC-Tech-Blog-Chlng-14"
+          target="_blank"
+          rel="noreferrer noopener"
           live="https://serene-springs-59438.herokuapp.com/"
           description="This is a full-stack Model View Controller (MVC) application that was created in
           the form of a blog. Once the user is logged in, they will experience the joy of Creating, Reading,
@@ -67,6 +75,8 @@ export default function ProjectPage() {
           image={require("../images/pizza_hunt.jpg")}
           name="Pizza Hunt MVC"
           repo="https://github.com/wlowrimore/pizza-hunt"
+          target="_blank"
+          rel="noreferrer noopener"
           live="https://pacific-ravine-27277.herokuapp.com/"
           description="Pizza Hunt is a social media recipe app where users can create custom pizzas, add
           comments to recipes, and create threads within those comments. The front-end for Pizza Hunt was
@@ -79,6 +89,8 @@ export default function ProjectPage() {
           image={require("../images/horiseon_refractor.jpg")}
           name="Horiseon SEO"
           repo="https://github.com/wlowrimore/vu-bc-12-2021-horiseon"
+          target="_blank"
+          rel="noreferrer noopener"
           live="https://wlowrimore.github.io/vu-bc-12-2021-horiseon/"
           description="The Horiseon site was provided with a code base that needed to be refractored in order
           to be more accessible. I uptdated the code to a more semantic HTML scripting. Also, I added alts
@@ -93,6 +105,8 @@ export default function ProjectPage() {
           image={require("../images/weather-dash.jpg")}
           name="Weather Dashboard"
           repo="https://github.com/wlowrimore/vandy_bc_weather_dash_chlng_06_2022"
+          target="_blank"
+          rel="noreferrer noopener"
           live="https://wlowrimore.github.io/vandy_bc_weather_dash_chlng_06_2022/"
           description="The Weather Dashboard is an app that returns requested weather data from a Third-Party API
           ( http://openweathermap.com ). The user searches for a city by city name. The current weather and 5-day

@@ -12,6 +12,8 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+/* _________________________________________HEADER__________________________________________ */
+
 .header {
   display: flex;
   flex-direction: column;
@@ -20,7 +22,6 @@ body {
   padding-bottom: -40px;
   align-items: center;
   background-color: #064862;
-
 }
 
 .header h2 {
@@ -212,6 +213,7 @@ nav .navActive {
   display: block;
   flex-direction: row;
   justify-content: center;
+  height: auto;
   margin: auto;
 }
 
@@ -222,11 +224,12 @@ nav .navActive {
   margin: 0;
 }
 
-.contact {
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; 
+  height: 600px;
   width: 50%;
   color: skyblue;
   background-color: #263236;
@@ -514,4 +517,145 @@ button {
   position: relative;
   line-height: 1.5;
   bottom: 12px;
+}
+
+/* ________________________________________MEDIA QUERIES_____________________________________ */
+
+@media only screen and (max-width: 1028px) {
+  
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-bottom: -40px;
+    justify-content: center;
+    align-items: center;
+    background-color: #070b0d;
+  }
+
+  .header h2 {
+    text-align: center;
+    font-size: 34px;
+    color: whitesmoke;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    line-height: 2;
+    font-size: 20px;
+  }
+  
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-decoration: none;
+    letter-spacing: 5px;
+  }
+  span:hover {
+    color: whitesmoke; 
+  }
+
+  #about h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 32px;
+    letter-spacing: 3px;
+    padding: 16px 0;
+  }
+  
+  .about-body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .about-body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .about-body p {
+    padding: 0 24px;
+    font-size: 20px;
+    margin: 0;
+    letter-spacing: 2px;
+  }
+
+  #portfolio h1 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 32px;
+    letter-spacing: 3px;
+    padding: 16px 0;
+  }
+
+  .projects {
+    padding-bottom: 20px;
+  }
+
+  .container h1 {
+    color: whitesmoke;
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    margin-top: -35px;
+  }
+  
+  #contact {
+    width: 100%;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+
+  #resume {
+    padding: 0 12px;
+  }
+
+  #resume h1 {
+    width: 100%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 32px;
+  }
+
+  .resume-header {
+    align-items: center;
+    margin: 0;
+  }
+
+  .resume-body {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .resume-contact-info {
+    align-items: center;
+  }
+
+  .footer {
+    width: 100%;
+    max-height: 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+    margin-top: 0;
+    background-color: #cbe4ee;
+  }
+
+  .footer-icons {
+    padding: 0;
+    max-height: 5px;
+  }
 }
