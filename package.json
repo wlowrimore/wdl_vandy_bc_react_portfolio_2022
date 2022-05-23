@@ -1,7 +1,7 @@
 {
   "name": "wdl_vandy_bc_react_portfolio_2022",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://wlowrimore.github.io",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
