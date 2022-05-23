@@ -24,8 +24,9 @@ When visiting the live site, there is no need for installation. Otherwise, `npm 
   <img src="src\assets\images\ss-contact.jpg" alt="screenshot" />
   <img src="src\assets\images\ss-portfolio.jpg" alt="screenshot" />
   <img src="src\assets\images\ss-resume.jpg" alt="screenshot" />
-  <br>
+  <br><br>
   
+  <a href="https://wlowrimore.github.io/wdl_vandy_bc_react_portfolio_2022/" target="_blank">LIVE SITE</a>
 
 ### License:
 
