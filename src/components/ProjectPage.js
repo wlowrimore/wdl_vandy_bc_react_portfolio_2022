@@ -34,7 +34,6 @@ export default function ProjectPage() {
           and retrieve it when internet connectivity is detected. This process is made possible by 
           the use of a 'service worker' and a local storage in an IndexedDB."
         />
-
         <Project
           image={require("../images/day_planner.jpg")}
           name="Day Planner App"
@@ -53,7 +52,23 @@ export default function ProjectPage() {
           even after the page has been closed and reopened, or simply refreshed. The date at the head
           of the document is also displayed in real time, so the date will change in real time, as well."
         />
-
+        <Project
+          image={require("../images/code_quiz.jpg")}
+          name="Coding Quiz"
+          repo="https://github.com/wlowrimore/vandy_bc_code_quiz_chlng4_2022"
+          target="_blank"
+          rel="noreferrer noopener"
+          live="https://wlowrimore.github.io/vandy_bc_code_quiz_chlng4_2022/"
+          description="This is a timed coding quiz with multiple choice questions. This app runs in the 
+          browser, and features dynamically updated HTML and CSS powered by JavaScript code. It features 
+          a clean, polished and responsive user interface (UI). With each incorrect answer, 10 seconds are 
+          deducted from your timer and overall score. When the timer reaches 0, the quiz is over. You are 
+          then presented with your final score and given the opportunity to enter your initials. Your initials 
+          and score are stored in your computers local storage. A link is provided to reveal the high scores 
+          that are located in your local storage. When you are ready to clear the high score list, just click 
+          the 'Clear Highscores' button, and the stored data will be removed. Take the quiz as many times as 
+          you would like by using the 'Go Back' button."
+        />
         <Project
           image={require("../images/tech_blog_mvc.jpg")}
           name="Tech Blog MVC"
