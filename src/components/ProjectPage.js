@@ -12,15 +12,22 @@ export default function ProjectPage() {
           repo="https://github.com/wlowrimore/wdl_vandy_bc_react_portfolio_2022"
           target="_blank"
           rel="noreferrer noopener"
-          live=""
-          description="Bounty Book was created as a team project for Vanderbilt University's Full
-          Stack Coding Bootcamp. We, as a team, developed a fully functional MERN stack site that
-          uses JWT authentication, web APIs, and front-end and back-end servers.  With this app, 
-          the user can create an account and begin searching for available bounty hunters, as well 
-          as, open bounties located in each of the 50 U.S. states.  My role in this project was 
-          front-end development of the UI design and functionality. I used React.js, Node.js, 
-          Express.js, JSX, JavaScript, HTML, Bootstrap, CSS, React Icons, and React Map, This is a
-          'Mobile First Application'."
+          live="https://bountybook.herokuapp.com/"
+          description="The Bounty Book app is designed with the purpose of assisting both bounty 
+          hunter and bail bondsmen with capturing wanted felons on the run. This app is a work in 
+          progress and has a lot of potential. A bounty hunter can signup/login and bid for open 
+          bounties in specific states. Using React Maps, the bounty hunter can click on a state which 
+          will then return the open bounties in that state (currently in development). On the other 
+          hand, a bail bondsman can signup/login and post bounties that they need help resolving. 
+          This app was a team project for the Vanderbilt University Full Stack Bootcamp. With very 
+          minimal alloted time for completion, my team and I opted for a very basic MVP with implications 
+          of future design structure and functionality. My role in this project was to design and style 
+          the UI. Some React bootstrap was used for the card layout, but other than that, the styling 
+          was done completely with Vanilla JavaScript. I used React to build the components and integrated 
+          them into each respective page. Then, each page is called, in the homepage, using React with 
+          switch case functionality. The team repository can be found at my team's Github Repository 
+          where you will see all of the original commit messages from each teammate. Bounty Book is Mobile 
+          Responsive."
         />
         <Project
           image={require("../images/budget_tracker_pwa.jpg")}
