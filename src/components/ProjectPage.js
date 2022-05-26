@@ -12,7 +12,7 @@ export default function ProjectPage() {
           repo="https://github.com/wlowrimore/wdl_vandy_bc_react_portfolio_2022"
           target="_blank"
           rel="noreferrer noopener"
-          live=""
+          live="https://bountybook.herokuapp.com/"
           description="Bounty Book was created as a team project for Vanderbilt University's Full
           Stack Coding Bootcamp. We, as a team, developed a fully functional MERN stack site that
           uses JWT authentication, web APIs, and front-end and back-end servers.  With this app, 
