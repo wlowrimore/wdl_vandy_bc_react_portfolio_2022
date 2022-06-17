@@ -34,13 +34,15 @@ const ResumePage = () => {
         <section className="objective">
           <h2>Objective</h2>
           <p>
-            I am a current student of Vanderbilt University's Full Stack Coding
-            Bootcamp. I will be a certified full stack developer with a focus on
-            MERN stack when I graduate in May 2022. As I am becoming well-
-            versed in languages from front-end to back-end development, I do
-            find front-end design and functionality to be where my interest lies
-            heavily. I am currently seeking employment where my front-end
-            knowledge and skills will be utilized.
+            I am a graduate of Vanderbilt University's Full Stack Coding
+            Bootcamp, where I earned my full stack developer ceritification. The
+            MERN stack was the main focus of my overall studies. As I have
+            become well-versed in numerous programming languages from front-end
+            to back-end development, I do find front-end functionality and
+            design to be where my skills take flight. I am currently seeking
+            employment where my front-end knowledge and skills will be utilized.
+            I am continually learning and developing new skills while, also
+            stregnthening the skills I already possess.
           </p>
         </section>
 
