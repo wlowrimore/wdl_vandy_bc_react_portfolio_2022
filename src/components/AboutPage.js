@@ -9,12 +9,12 @@ export default function AboutPage() {
       <div className="about-body">
         <img src={ProfilePic} alt="William Lowrimore" />
         <p>
-          Hi, my name is William Lowrimore. I am currently studying at
-          Vanderbilt University's Full Stack Coding Bootcamp. Let me begin by
-          saying, "This is the most excited I've been about my direction in life
-          in a very long time!". I come from the banks of the Mississippi, where
-          I was born and raised...Memphis, TN to be exact. I come from a family
-          of musicians, artists, and (yes indeed) software 'techies'. I, myself,
+          Hi, my name is William Lowrimore. I am graduate of Vanderbilt
+          University's Full Stack Coding Bootcamp. Let me begin by saying, "This
+          is the most excited I've been about my direction in life in a very
+          long time!". I come from the banks of the Mississippi, where I was
+          born and raised...Memphis, TN to be exact. I come from a family of
+          musicians, artists, and (yes indeed) software 'techies'. I, myself,
           chose the path of music at a young age, and ran with it. Most of my
           professional years have been spent on the road and in recording
           studios. I toured, recorded and taught music. Music was my life!

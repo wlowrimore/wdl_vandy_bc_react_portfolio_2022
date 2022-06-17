@@ -12,15 +12,22 @@ export default function ProjectPage() {
           repo="https://github.com/wlowrimore/wdl_vandy_bc_react_portfolio_2022"
           target="_blank"
           rel="noreferrer noopener"
-          live=""
-          description="Bounty Book was created as a team project for Vanderbilt University's Full
-          Stack Coding Bootcamp. We, as a team, developed a fully functional MERN stack site that
-          uses JWT authentication, web APIs, and front-end and back-end servers.  With this app, 
-          the user can create an account and begin searching for available bounty hunters, as well 
-          as, open bounties located in each of the 50 U.S. states.  My role in this project was 
-          front-end development of the UI design and functionality. I used React.js, Node.js, 
-          Express.js, JSX, JavaScript, HTML, Bootstrap, CSS, React Icons, and React Map, This is a
-          'Mobile First Application'."
+          live="https://bountybook.herokuapp.com/"
+          description="The Bounty Book app is designed with the purpose of assisting both bounty 
+          hunter and bail bondsmen with capturing wanted felons on the run. This app is a work in 
+          progress and has a lot of potential. A bounty hunter can signup/login and bid for open 
+          bounties in specific states. Using React Maps, the bounty hunter can click on a state which 
+          will then return the open bounties in that state (currently in development). On the other 
+          hand, a bail bondsman can signup/login and post bounties that they need help resolving. 
+          This app was a team project for the Vanderbilt University Full Stack Bootcamp. With very 
+          minimal alloted time for completion, my team and I opted for a very basic MVP with implications 
+          of future design structure and functionality. My role in this project was to design and style 
+          the UI. Some React bootstrap was used for the card layout, but other than that, the styling 
+          was done completely with Vanilla JavaScript. I used React to build the components and integrated 
+          them into each respective page. Then, each page is called, in the homepage, using React with 
+          switch case functionality. The team repository can be found at my team's Github Repository 
+          where you will see all of the original commit messages from each teammate. Bounty Book is Mobile 
+          Responsive."
         />
         <Project
           image={require("../images/budget_tracker_pwa.jpg")}
@@ -34,7 +41,6 @@ export default function ProjectPage() {
           and retrieve it when internet connectivity is detected. This process is made possible by 
           the use of a 'service worker' and a local storage in an IndexedDB."
         />
-
         <Project
           image={require("../images/day_planner.jpg")}
           name="Day Planner App"
@@ -53,7 +59,23 @@ export default function ProjectPage() {
           even after the page has been closed and reopened, or simply refreshed. The date at the head
           of the document is also displayed in real time, so the date will change in real time, as well."
         />
-
+        <Project
+          image={require("../images/code_quiz.jpg")}
+          name="Coding Quiz"
+          repo="https://github.com/wlowrimore/vandy_bc_code_quiz_chlng4_2022"
+          target="_blank"
+          rel="noreferrer noopener"
+          live="https://wlowrimore.github.io/vandy_bc_code_quiz_chlng4_2022/"
+          description="This is a timed coding quiz with multiple choice questions. This app runs in the 
+          browser, and features dynamically updated HTML and CSS powered by JavaScript code. It features 
+          a clean, polished and responsive user interface (UI). With each incorrect answer, 10 seconds are 
+          deducted from your timer and overall score. When the timer reaches 0, the quiz is over. You are 
+          then presented with your final score and given the opportunity to enter your initials. Your initials 
+          and score are stored in your computers local storage. A link is provided to reveal the high scores 
+          that are located in your local storage. When you are ready to clear the high score list, just click 
+          the 'Clear Highscores' button, and the stored data will be removed. Take the quiz as many times as 
+          you would like by using the 'Go Back' button."
+        />
         <Project
           image={require("../images/tech_blog_mvc.jpg")}
           name="Tech Blog MVC"
