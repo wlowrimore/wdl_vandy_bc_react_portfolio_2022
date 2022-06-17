@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/wdl_vandy_bc_react_portfolio_2022/static/css/main.7cb2121e.css",
-    "main.js": "/wdl_vandy_bc_react_portfolio_2022/static/js/main.6fe69481.js",
+    "main.js": "/wdl_vandy_bc_react_portfolio_2022/static/js/main.7ae06b76.js",
     "static/js/787.ca59da7f.chunk.js": "/wdl_vandy_bc_react_portfolio_2022/static/js/787.ca59da7f.chunk.js",
+    "static/media/code_quiz.jpg": "/wdl_vandy_bc_react_portfolio_2022/static/media/code_quiz.9780c29861fcf79b59b3.jpg",
     "static/media/horiseon_refractor.jpg": "/wdl_vandy_bc_react_portfolio_2022/static/media/horiseon_refractor.20df96ae3e419fbbe56c.jpg",
     "static/media/resume.pdf": "/wdl_vandy_bc_react_portfolio_2022/static/media/resume.386d1c266d33cdc13a39.pdf",
     "static/media/pizza_hunt.jpg": "/wdl_vandy_bc_react_portfolio_2022/static/media/pizza_hunt.d5aa908992a0335c6053.jpg",
@@ -15,11 +16,11 @@
     "static/media/react.svg": "/wdl_vandy_bc_react_portfolio_2022/static/media/react.317c8cdecc5308dba63b0c99be08d96e.svg",
     "index.html": "/wdl_vandy_bc_react_portfolio_2022/index.html",
     "main.7cb2121e.css.map": "/wdl_vandy_bc_react_portfolio_2022/static/css/main.7cb2121e.css.map",
-    "main.6fe69481.js.map": "/wdl_vandy_bc_react_portfolio_2022/static/js/main.6fe69481.js.map",
+    "main.7ae06b76.js.map": "/wdl_vandy_bc_react_portfolio_2022/static/js/main.7ae06b76.js.map",
     "787.ca59da7f.chunk.js.map": "/wdl_vandy_bc_react_portfolio_2022/static/js/787.ca59da7f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7cb2121e.css",
-    "static/js/main.6fe69481.js"
+    "static/js/main.7ae06b76.js"
   ]
 }
